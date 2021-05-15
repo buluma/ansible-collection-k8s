@@ -1,20 +1,20 @@
 # Kubernetes Collection for Ansible
 
-[![Build Status](https://travis-ci.com/geerlingguy/ansible-collection-k8s.svg?branch=master)](https://travis-ci.com/geerlingguy/ansible-collection-k8s)
+[![Build Status](https://travis-ci.com/buluma/ansible-collection-k8s.svg?branch=master)](https://travis-ci.com/buluma/ansible-collection-k8s)
 
 This collection contains Kubernetes-related roles and Ansible plugins and modules maintained by Jeff Geerling (geerlingguy).
 
 It includes:
 
-  - [geerlingguy.kubernetes](https://github.com/geerlingguy/ansible-role-kubernetes)
-  - [geerlingguy.k8s_manifests](https://github.com/geerlingguy/ansible-role-k8s_manifests)
-  - [geerlingguy.helm](https://github.com/geerlingguy/ansible-role-helm)
+  - [geerlingguy.kubernetes](https://github.com/buluma/ansible-role-kubernetes)
+  - [geerlingguy.k8s_manifests](https://github.com/buluma/ansible-role-k8s_manifests)
+  - [geerlingguy.helm](https://github.com/buluma/ansible-role-helm)
 
 ## Usage
 
 Install this collection locally:
 
-    ansible-galaxy collection install geerlingguy.k8s -p ./collections
+    ansible-galaxy collection install buluma.k8s -p ./collections
 
 Then you can use the roles from the collection in your playbooks:
 
@@ -22,7 +22,7 @@ Then you can use the roles from the collection in your playbooks:
     - hosts: all
     
       collections:
-        - geerlingguy.k8s
+        - buluma.k8s
     
       roles:
         - kubernetes
@@ -35,7 +35,7 @@ Then you can use the roles from the collection in your playbooks:
               - dir: docker-registry
                 namespace: registry
 
-> If you want to be more explicit, you can use the fully-qualified role name when referring to a role in this collection, like `geerlingguy.k8s.kubernetes` instead of just `kubernetes`. This could be helpful if, for example, you maintain a separate `kubernetes` role in another place on your local workstation.
+> If you want to be more explicit, you can use the fully-qualified role name when referring to a role in this collection, like `buluma.k8s.kubernetes` instead of just `kubernetes`. This could be helpful if, for example, you maintain a separate `kubernetes` role in another place on your local workstation.
 
 ## Development
 
@@ -64,7 +64,3 @@ Then commit and push all changes, and make sure all tests are passing.
 Then tag the new version of the collection and push the tag.
 
 Once pushed, if tests pass, Travis CI will deploy the new collection version using the playbook in `scripts/deploy.yml`. That directory also contains the `galaxy.yml` template that will be used to build the collection metadata.
-
-## Author
-
-This collection was created in 2019 by [Jeff Geerling](https://www.jeffgeerling.com/), author of [Ansible for DevOps](https://www.ansiblefordevops.com/) and [Ansible for Kubernetes](https://www.ansibleforkubernetes.com).
