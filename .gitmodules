@@ -7,3 +7,12 @@
 [submodule "roles/helm"]
 	path = roles/helm
 	url = https://github.com/buluma/ansible-role-helm.git
+[submodule "ansible-role-helm"]
+	path = ansible-role-helm
+	url = https://github.com/buluma/ansible-role-helm.git
+[submodule "ansible-role-kubernetes"]
+	path = ansible-role-kubernetes
+	url = https://github.com/geerlingguy/ansible-role-kubernetes.git
+[submodule "ansible-role-k8s_manifests"]
+	path = ansible-role-k8s_manifests
+	url = https://github.com/buluma/ansible-role-k8s_manifests.git
