@@ -7,7 +7,7 @@ readme: README.md
 authors:
   - buluma
 
-description: Collection of macOS automation tools for Ansible.
+description: Kubernetes Collection for Ansible
 
 # Either a single license or a list of licenses for content inside of a collection. Ansible Galaxy currently only
 # accepts L(SPDX,https://spdx.org/licenses/) licenses. This key is mutually exclusive with 'license_file'
