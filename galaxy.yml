@@ -1,0 +1,45 @@
+---
+namespace: buluma
+name: mac
+version: "1.2.1"
+readme: README.md
+
+authors:
+  - buluma
+
+description: Collection of macOS automation tools for Ansible.
+
+# Either a single license or a list of licenses for content inside of a collection. Ansible Galaxy currently only
+# accepts L(SPDX,https://spdx.org/licenses/) licenses. This key is mutually exclusive with 'license_file'
+license:
+  - MIT
+
+# A list of tags you want to associate with the collection for indexing/searching. A tag name has the same character
+# requirements as 'namespace' and 'name'
+tags:
+  - kubernetes
+  - k8s
+  - infrastructure
+  - cloud
+  - containers
+  - eks
+  - aks
+  - gke
+  - digitalocean
+  - docker
+  - debian
+  - redhat
+  - ubuntu
+  - amazon
+  - linux
+  - native
+
+dependencies:
+  community.general: ">=3.0.0"
+
+repository: https://github.com/buluma/ansible-collection-k8s
+documentation: https://github.com/buluma/ansible-collection-k8s
+homepage: https://www.github.com/buluma
+issues: https://github.com/buluma/ansible-collection-k8s/issues
+
+build_ignore: []
